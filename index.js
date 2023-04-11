@@ -3,8 +3,10 @@ const fs = require('fs');
 
 const inquirer = require('inquirer');
 
-const readMeGenerator = (projectTitle, author, githubName, description, email, liveSite, installation, license, otherLicense, ...restOfAttributes) => {
-    console.log(restOfAttributes);
+const generateMarkdown = require('./utils/generateMarkdown.js');
+
+
+const readMeGenerator = (projectTitle, author, githubName, description, email, liveSite, installation, license, otherLicense, usage, notes) => {
     if (license === 'other') {
         license = otherLicense;
     }
@@ -12,14 +14,15 @@ const readMeGenerator = (projectTitle, author, githubName, description, email, l
     # ${projectTitle}
     ## by ${author}
     ## Table of Contents
-    * [Description](https://github.com/${github}/readme-generator#description)
-    * [Installation](https://github.com/${github}/readme-generator#installation)
-    * [Usage](https://github.com/${github}/readme-generator#usage)
-    * [Live Site](https://github.com/${github}/readme-generator#live-site)
-    * [Contributing](https://github.com/${github}/readme-generator#contributing)
-    * [Tests](https://github.com/${github}/readme-generator#tests)
-    * [Questions and Contact](https://github.com/${github}/readme-generator#question-and-contact-info)
-    * [License](https://github.com/${github}/readme-generator#license)
+    * [Description](https://github.com/${githubName}/readme-generator#description)
+    * [Installation](https://github.com/${githubName}/readme-generator#installation)
+    * [Usage](https://github.com/${githubName}/readme-generator#usage)
+    * [Live Site](https://github.com/${githubName}/readme-generator#live-site)
+    * [Contributing](https://github.com/${githubName}/readme-generator#contributing)
+    * [Tests](https://github.com/${githubName}/readme-generator#tests)
+    * [Notes](https://github.com/${githubName}/readme-generator#notes)
+    * [Questions and Contact](https://github.com/${githubName}/readme-generator#question-and-contact-info)
+    * [License](https://github.com/${githubName}/readme-generator#license)
  
     ## Description
     ${description}
@@ -31,13 +34,20 @@ const readMeGenerator = (projectTitle, author, githubName, description, email, l
     ${usage}
     
     ## Live Site
-    ### [${title}](${liveSite})
+    ### [${projectTitle}](${liveSite})
 
 // to be completed
     ## Contributing
     
 // to be completed   
     ## Tests
+
+    ## Notes
+    ${notes}
+
+    ## Usage
+    ${usage}
+    
 
     ## Questions
     If you have any questions, please reach out to me at ${email}.
@@ -107,6 +117,11 @@ inquirer.prompt([
     message: "If you chose 'other' for your license, please enter it below from the list found at https://spdx.org/licenses/",
     type: 'input',
   },
+  {
+    name: 'notes',
+    message: "Are there any other notes you'd like to add?",
+    type: 'input',
+  },
 ]).then(answers => {
   console.log(answers);
   fs.writeFile('README1.md', readMeGenerator(answers), (err) => {
@@ -114,6 +129,6 @@ inquirer.prompt([
       return console.log(err);
     }
 
-    console.log('Success!!! MUAHAHAHAHAHAHAHA!!!!');
+    console.log('Success!!! MUAHAHAHAHAHAHAHA!!!!... probably');
   });
 });
