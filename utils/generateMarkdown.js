@@ -26,15 +26,15 @@ function generateMarkdown(answersObject) {
   return `# ${answersObject.projectTitle}
 ## by ${answersObject.author}
 ## Table of Contents
-* [Description](https://github.com/${answersObject.githubName}/readme-generator/${answersObject.outputFolder}#description)
-* [Installation](https://github.com/${answersObject.githubName}/readme-generator/${answersObject.outputFolder}#installation)
-* [Usage](https://github.com/${answersObject.githubName}/readme-generator/${answersObject.outputFolder}#usage)
-* [Live Site](https://github.com/${answersObject.githubName}/readme-generator/${answersObject.outputFolder}#live-site)
-* [Contributing](https://github.com/${answersObject.githubName}/readme-generator/${answersObject.outputFolder}#contributing)
-* [Tests](https://github.com/${answersObject.githubName}/readme-generator/${answersObject.outputFolder}#tests)
-* [Notes](https://github.com/${answersObject.githubName}/readme-generator/${answersObject.outputFolder}#notes)
-* [Questions and Contact](https://github.com/${answersObject.githubName}/readme-generator/${answersObject.outputFolder}#question)
-* [License](https://github.com/${answersObject.githubName}/readme-generator/${answersObject.outputFolder}#license)
+* [Description](https://github.com/${answersObject.githubName}/readme-generator#description)
+* [Installation](https://github.com/${answersObject.githubName}/readme-generator#installation)
+* [Usage](https://github.com/${answersObject.githubName}/readme-generator#usage)
+* [Live Site](https://github.com/${answersObject.githubName}/readme-generator#live-site)
+* [Contributing](https://github.com/${answersObject.githubName}/readme-generator#contributing)
+* [Tests](https://github.com/${answersObject.githubName}/readme-generator#tests)
+* [Notes](https://github.com/${answersObject.githubName}/readme-generator#notes)
+* [Questions and Contact](https://github.com/${answersObject.githubName}/readme-generator#question-and-contact-info)
+* [License](https://github.com/${answersObject.githubName}/readme-generator#license)
 
 ## Description
 ${answersObject.description}
