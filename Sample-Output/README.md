@@ -1,15 +1,15 @@
 # ReadMe Generator
 ## by Dan McKay
 ## Table of Contents
-* [Description](https://github.com/DanielFMcKay/readme-generator#description)
-* [Installation](https://github.com/DanielFMcKay/readme-generator#installation)
-* [Usage](https://github.com/DanielFMcKay/readme-generator#usage)
-* [Live Site](https://github.com/DanielFMcKay/readme-generator#live-site)
-* [Contributing](https://github.com/DanielFMcKay/readme-generator#contributing)
-* [Tests](https://github.com/DanielFMcKay/readme-generator#tests)
-* [Notes](https://github.com/DanielFMcKay/readme-generator#notes)
-* [Questions and Contact](https://github.com/DanielFMcKay/readme-generator#question-and-contact-info)
-* [License](https://github.com/DanielFMcKay/readme-generator#license)
+* [Description](https://github.com/DanielFMcKay/readme-generator/Sample-Output/#description)
+* [Installation](https://github.com/DanielFMcKay/readme-generator/Sample-Output/#installation)
+* [Usage](https://github.com/DanielFMcKay/readme-generator/Sample-Output/#usage)
+* [Live Site](https://github.com/DanielFMcKay/readme-generator/Sample-Output/#live-site)
+* [Contributing](https://github.com/DanielFMcKay/readme-generator/Sample-Output/#contributing)
+* [Tests](https://github.com/DanielFMcKay/readme-generator/Sample-Output/#tests)
+* [Notes](https://github.com/DanielFMcKay/readme-generator/Sample-Output/#notes)
+* [Questions and Contact](https://github.com/DanielFMcKay/readme-generator/Sample-Output/#questions)
+* [License](https://github.com/DanielFMcKay/readme-generator/Sample-Output/#license)
 
 ## Description
 This project is a weekly assignment for the Bootcamp Spot coding bootcamp offered through UC Berkeley. It is a ReadMe file generator that uses command line prompts via Node JS to get relevant information from the User and then insert them into a professional ReadMe which it then produces in a folder designated by the User.

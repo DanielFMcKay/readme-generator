@@ -33,7 +33,7 @@ function generateMarkdown(answersObject) {
 * [Contributing](https://github.com/${answersObject.githubName}/readme-generator/${answersObject.outputFolder}#contributing)
 * [Tests](https://github.com/${answersObject.githubName}/readme-generator/${answersObject.outputFolder}#tests)
 * [Notes](https://github.com/${answersObject.githubName}/readme-generator/${answersObject.outputFolder}#notes)
-* [Questions and Contact](https://github.com/${answersObject.githubName}/readme-generator/${answersObject.outputFolder}#question-and-contact-info)
+* [Questions and Contact](https://github.com/${answersObject.githubName}/readme-generator/${answersObject.outputFolder}#question)
 * [License](https://github.com/${answersObject.githubName}/readme-generator/${answersObject.outputFolder}#license)
 
 ## Description
