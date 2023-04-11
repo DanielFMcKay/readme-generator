@@ -20,7 +20,7 @@ inquirer.prompt([
   },
   {
     name: 'githubName',
-    message: 'What is your GitHub username?',
+    message: 'What is your GitHub username? Please remember that this is case-sensitive.',
     type: 'input',
   },
   {
@@ -81,9 +81,6 @@ inquirer.prompt([
     type: 'input',
   },
   {
-    name: 'outputFolder',
-    message: "In what folder would you like this ReadMe placed in within the repository, if different from the parent folder? If in the parent folder, please skip this.",
-    type: 'input',
   },
 ]).then(response => {
   // The folder path below is just so it doesn't overwrite the project's actual ReadMe file. It should still be retrievable from there.
