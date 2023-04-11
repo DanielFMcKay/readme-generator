@@ -5,60 +5,59 @@ const inquirer = require('inquirer');
 
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
+  // projectTitle, author, githubName, description, email, liveSite, installation, license, otherLicense, usage, notes, contributing
 
-const readMeGenerator = (projectTitle, author, githubName, description, email, liveSite, installation, license, otherLicense, usage, notes) => {
-    if (license === 'other') {
-        license = otherLicense;
+const readMeGenerator = (answersObject) => {
+    if (answersObject.license === 'other') {
+      answersObject.license = answersObject.otherLicense;
     }
-    return `
-    # ${projectTitle}
-    ## by ${author}
-    ## Table of Contents
-    * [Description](https://github.com/${githubName}/readme-generator#description)
-    * [Installation](https://github.com/${githubName}/readme-generator#installation)
-    * [Usage](https://github.com/${githubName}/readme-generator#usage)
-    * [Live Site](https://github.com/${githubName}/readme-generator#live-site)
-    * [Contributing](https://github.com/${githubName}/readme-generator#contributing)
-    * [Tests](https://github.com/${githubName}/readme-generator#tests)
-    * [Notes](https://github.com/${githubName}/readme-generator#notes)
-    * [Questions and Contact](https://github.com/${githubName}/readme-generator#question-and-contact-info)
-    * [License](https://github.com/${githubName}/readme-generator#license)
+    return `# ${answersObject.projectTitle}
+## by ${answersObject.author}
+## Table of Contents
+* [Description](https://github.com/${answersObject.githubName}/readme-generator#description)
+* [Installation](https://github.com/${answersObject.githubName}/readme-generator#installation)
+* [Usage](https://github.com/${answersObject.githubName}/readme-generator#usage)
+* [Live Site](https://github.com/${answersObject.githubName}/readme-generator#live-site)
+* [Contributing](https://github.com/${answersObject.githubName}/readme-generator#contributing)
+* [Tests](https://github.com/${answersObject.githubName}/readme-generator#tests)
+* [Notes](https://github.com/${answersObject.githubName}/readme-generator#notes)
+* [Questions and Contact](https://github.com/${answersObject.githubName}/readme-generator#question-and-contact-info)
+* [License](https://github.com/${answersObject.githubName}/readme-generator#license)
  
-    ## Description
-    ${description}
+## Description
+${answersObject.description}
 
-    ## Installation Instructions
-    ${installation}
+## Installation Instructions
+${answersObject.installation}
 
-    ## Usage
-    ${usage}
+## Usage
+${answersObject.usage}
     
-    ## Live Site
-    ### [${projectTitle}](${liveSite})
+## Live Site
+### [${answersObject.projectTitle}](${answersObject.liveSite})
 
-// to be completed
-    ## Contributing
+## Contributing
+### ${answersObject.contributing}
     
-// to be completed   
-    ## Tests
+## Tests
 
-    ## Notes
-    ${notes}
+## Notes
+${answersObject.notes}
 
-    ## Usage
-    ${usage}
+## Usage
+${answersObject.usage}
     
 
-    ## Questions
-    If you have any questions, please reach out to me at ${email}.
-    You can also see my portfolio at https://github.com/${githubName}.    
+## Questions
+If you have any questions, please reach out to me at ${answersObject.email}.
+You can also see my portfolio at https://github.com/${answersObject.githubName}.    
     
-    ## This project is covered under the ${license} License.
+## This project is covered under the ${answersObject.license} License.
 
-    ## Copyright (c) 2023 ${author}.
+## Copyright (c) 2023 ${answersObject.author}.
     
-    `
-  };
+`
+}
   
 
 
@@ -106,6 +105,11 @@ inquirer.prompt([
     type: 'input',
   },
   {
+    name: 'contributing',
+    message: "Please list any additional contributors for this project, if applicable.",
+    type: 'input',
+  },
+  {
     name: 'license',
     message: 'What license are you using for your project?',
     type: 'list',
@@ -122,13 +126,11 @@ inquirer.prompt([
     message: "Are there any other notes you'd like to add?",
     type: 'input',
   },
-]).then(answers => {
-  console.log(answers);
-  fs.writeFile('README1.md', readMeGenerator(answers), (err) => {
+]).then(response => {
+  fs.writeFile('./Sample-Output/README.md', readMeGenerator(response), (err) => {
     if (err) {
       return console.log(err);
     }
-
     console.log('Success!!! MUAHAHAHAHAHAHAHA!!!!... probably');
   });
 });
