@@ -5,62 +5,6 @@ const inquirer = require('inquirer');
 
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
-  // projectTitle, author, githubName, description, email, liveSite, installation, license, otherLicense, usage, notes, contributing
-
-const readMeGenerator = (answersObject) => {
-    if (answersObject.license === 'other') {
-      answersObject.license = answersObject.otherLicense;
-    }
-    return `# ${answersObject.projectTitle}
-## by ${answersObject.author}
-## Table of Contents
-* [Description](https://github.com/${answersObject.githubName}/readme-generator#description)
-* [Installation](https://github.com/${answersObject.githubName}/readme-generator#installation)
-* [Usage](https://github.com/${answersObject.githubName}/readme-generator#usage)
-* [Live Site](https://github.com/${answersObject.githubName}/readme-generator#live-site)
-* [Contributing](https://github.com/${answersObject.githubName}/readme-generator#contributing)
-* [Tests](https://github.com/${answersObject.githubName}/readme-generator#tests)
-* [Notes](https://github.com/${answersObject.githubName}/readme-generator#notes)
-* [Questions and Contact](https://github.com/${answersObject.githubName}/readme-generator#question-and-contact-info)
-* [License](https://github.com/${answersObject.githubName}/readme-generator#license)
- 
-## Description
-${answersObject.description}
-
-## Installation Instructions
-${answersObject.installation}
-
-## Usage
-${answersObject.usage}
-    
-## Live Site
-### [${answersObject.projectTitle}](${answersObject.liveSite})
-
-## Contributing
-### ${answersObject.contributing}
-    
-## Tests
-
-## Notes
-${answersObject.notes}
-
-## Usage
-${answersObject.usage}
-    
-
-## Questions
-If you have any questions, please reach out to me at ${answersObject.email}.
-You can also see my portfolio at https://github.com/${answersObject.githubName}.    
-    
-## This project is covered under the ${answersObject.license} License.
-
-## Copyright (c) 2023 ${answersObject.author}.
-    
-`
-}
-  
-
-
 inquirer.prompt([
   {
     // name = what key will the answer to this question be saved in
@@ -90,13 +34,18 @@ inquirer.prompt([
     type: 'input',
   },
   {
-    name: 'installation',
-    message: 'Please provide instructions for your project, if applicable.',
+    name: 'email',
+    message: 'What is your email address for professional purposes?',
     type: 'input',
   },
   {
-    name: 'email',
-    message: 'What is your email address for professional purposes?',
+    name: 'installation',
+    message: 'Please provide installation instructions for your project, if applicable.',
+    type: 'input',
+  },
+  {
+    name: 'testing',
+    message: 'What are some ways to test this app or project?',
     type: 'input',
   },
   {
@@ -106,7 +55,12 @@ inquirer.prompt([
   },
   {
     name: 'contributing',
-    message: "Please list any additional contributors for this project, if applicable.",
+    message: "What are the contribution guidelines for this project?",
+    type: 'input',
+  },
+  {
+    name: 'contributors',
+    message: "Please list any additional contributors to the project here.",
     type: 'input',
   },
   {
@@ -126,8 +80,15 @@ inquirer.prompt([
     message: "Are there any other notes you'd like to add?",
     type: 'input',
   },
+  {
+    name: 'outputFolder',
+    message: "In what folder would you like this ReadMe placed in within the repository, if different from the parent folder? If in the parent folder, please skip this.",
+    type: 'input',
+  },
 ]).then(response => {
-  fs.writeFile('./Sample-Output/README.md', readMeGenerator(response), (err) => {
+  // The folder path below is just so it doesn't overwrite the project's actual ReadMe file. It should still be retrievable from there.
+  fs.writeFile('./Sample-Output/README.md', generateMarkdown
+  (response), (err) => {
     if (err) {
       return console.log(err);
     }
