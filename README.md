@@ -1,60 +1,22 @@
 # readme-generator
 a node JS app to create a quality readme via command line prompts and entries
 
-* Ironically, this ReadMe for my ReadMe Generator is just a placeholder right now
-
 # 09 Node.js Challenge: Professional README Generator
 
 ## Description
 
-* This app is week 9 assignment for the UC Berkeley Bootcamp Spot coding bootcamp. It is a README generator that prompts a user for input via command lines in a terminal using Node JS, and then inputs the information into a professionally formatted ReadMe.
+* This app is week 9 assignment for the UC Berkeley Bootcamp Spot coding bootcamp. 
 
-* A sample output is included in the Sample-Output folder.
+* It is a README generator that prompts a user for input via command lines in a terminal using Node JS, and then inputs the information into a professionally formatted ReadMe.
 
-* A walkthrough video will also be added at a future date.
+* A sample output is included in the Sample-Output folder here: https://github.com/DanielFMcKay/readme-generator/tree/master/Sample-Output.
+
+* Demo video: https://drive.google.com/file/d/1M7d7lfulfwVZbnSzz9HQJzK4MBYmcPk7/view
 
 * There is a utility folder that has a script file for generating the desired markdown formatting. It will also apply the licensing text and stamp at a future date.
 
+* A badge license feature is to be added in a future update.
 
-## User Story
+Note: the anchor tags in the provided output sample act as if the file was located where a GitHub ReadMe normally would be. Please click on the Description link to see it link back here to demonstrate.
 
-```md
-AS A developer
-I WANT a README generator
-SO THAT I can quickly create a professional README for a new project
-```
-
-## Acceptance Criteria
-
-```md
-GIVEN a command-line application that accepts user input
-WHEN I am prompted for information about my application repository
-THEN a high-quality, professional README.md is generated with 
-the title of my project and sections entitled 
-Description, 
-Table of Contents, 
-Installation, 
-Usage, 
-License, 
-Contributing, 
-Tests, and 
-Questions
-
-WHEN I enter my project title✔
-THEN this is displayed as the title of the README
-
-WHEN I enter a description✔, installation instructions✔, usage information, contribution guidelines, and test instructions
-THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
-
-WHEN I choose a license for my application from a list of options✔
-THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
-
-WHEN I enter my GitHub username✔
-THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
-
-WHEN I enter my email address✔
-THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
-
-WHEN I click on the links in the Table of Contents
-THEN I am taken to the corresponding section of the README
-```
+(c) Daniel McKay 2023
