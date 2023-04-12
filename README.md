@@ -13,7 +13,7 @@ a node JS app to create a quality readme via command line prompts and entries
 
 * A walkthrough video will also be added at a future date.
 
-* A utility folder with a script file that, among other things, applies the proper license and the license stamp, will be in the final product.
+* There is a utility folder that has a script file for generating the desired markdown formatting. It will also apply the licensing text and stamp at a future date.
 
 
 ## User Story
