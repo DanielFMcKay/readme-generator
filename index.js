@@ -67,7 +67,7 @@ inquirer.prompt([
     name: 'license',
     message: 'What license are you using for your project?',
     type: 'list',
-    choices: ['MIT', 'Apache-2.0', 'GPL-3.0', 'BSD-2-Clause', 'BSD-3-Clause', 'BSD-4-Clause', 'Microsoft Public', 'CC-BY-NC-1.0', 'CC-BY-NC-4.0', 'CC-BY-SA-1.0', 'other']
+    choices: ['MIT', 'Apache-2.0', 'GPL-3.0', 'BSD-2-Clause', 'BSD-3-Clause', 'BSD-4-Clause', 'MS-PL', 'CC-BY-NC-1.0', 'CC-BY-NC-4.0', 'CC-BY-SA-1.0', 'other', 'none']
     ,
   },
   {
@@ -79,8 +79,6 @@ inquirer.prompt([
     name: 'notes',
     message: "Are there any other notes you'd like to add?",
     type: 'input',
-  },
-  {
   },
 ]).then(response => {
   // The folder path below is just so it doesn't overwrite the project's actual ReadMe file. It should still be retrievable from there.
