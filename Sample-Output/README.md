@@ -43,7 +43,6 @@ If you have any questions, please reach out to me at d*******@gmail.com.
 You can also see my portfolio at https://github.com/DanielFMcKay.    
   
 ## This project is covered under the MIT License.
-### more information can be found at https://spdx.org/licenses/MIT.html.
+### More information can be found at https://spdx.org/licenses/MIT.html.
 
 ## Copyright (c) 2023 Dan McKay.
-  

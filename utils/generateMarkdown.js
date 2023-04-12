@@ -23,9 +23,9 @@ function generateMarkdown(answersObject) {
   }
   console.log("license is")
   console.log(answersObject.license)
-  var licenseLink = "more information can be found at https://spdx.org/licenses/" + answersObject.license + ".html"
+  var licenseLink = "More information can be found at https://spdx.org/licenses/" + answersObject.license + ".html"
   if (answersObject.license==='other') {
-    licenseLink==="more information can be found at the directory at https://spdx.org/licenses/"
+    licenseLink==="More information can be found at the directory at https://spdx.org/licenses/"
   } else if (answersObject.license==='none') {
     licenseLink==="";
   }
