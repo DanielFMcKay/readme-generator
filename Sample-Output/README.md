@@ -1,5 +1,8 @@
 # ReadMe Generator
+  ![image](https://img.shields.io/badge/License-MIT-slateblue.svg)
 ## by Dan McKay
+<hr>
+
 ## Table of Contents
 * [Description](https://github.com/DanielFMcKay/readme-generator#description)
 * [Installation](https://github.com/DanielFMcKay/readme-generator#installation)
@@ -10,6 +13,7 @@
 * [Notes](https://github.com/DanielFMcKay/readme-generator#notes)
 * [Questions and Contact](https://github.com/DanielFMcKay/readme-generator#question-and-contact-info)
 * [License](https://github.com/DanielFMcKay/readme-generator#license)
+<hr>
 
 ## Description
 This project is a weekly assignment for the Bootcamp Spot coding bootcamp offered through UC Berkeley. It is a ReadMe file generator that uses command line prompts via Node JS to get relevant information from the User and then insert them into a professional ReadMe which it then produces in a folder designated by the User.
@@ -31,18 +35,20 @@ This project is a weekly assignment for the Bootcamp Spot coding bootcamp offere
 ## Contributors & Collaborators
 * N/A
 
-## Notes
-### This ReadMe file is just a sample output for demonstration purposes.
-
 ## Usage
 ### A demo video will be provided in the future. Ironically, it is being recorded now. Anyway, the app is used by using a coding terminal such as Git Bash or VS Code's integrated terminal, running the command "node index", and then answering each question as prompted, and selecting an appropriate usage license from the list provided or entering a different one.
+
+## Notes
+### This ReadMe file is just a sample output for demonstration purposes.
   
 
 ## Questions
 If you have any questions, please reach out to me at d*******@gmail.com.
 You can also see my portfolio at https://github.com/DanielFMcKay.    
   
-## This project is covered under the MIT License.
+## License
+### This project is covered under the MIT License.
 ### More information can be found at https://spdx.org/licenses/MIT.html.
 
 ## Copyright (c) 2023 Dan McKay.
+  

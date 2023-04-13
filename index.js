@@ -1,4 +1,5 @@
-// THIS IS VERY MUCH IN PROGRESS!!!
+// Code goes here
+
 const fs = require('fs');
 
 const inquirer = require('inquirer');
