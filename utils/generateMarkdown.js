@@ -31,7 +31,7 @@ function generateMarkdown(answersObject) {
 * [Contributing](https://github.com/${answersObject.githubName}/readme-generator#contributing)
 * [Tests](https://github.com/${answersObject.githubName}/readme-generator#tests)
 * [Notes](https://github.com/${answersObject.githubName}/readme-generator#notes)
-* [Questions and Contact](https://github.com/${answersObject.githubName}/readme-generator#question-and-contact-info)
+* [Questions and Contact Info](https://github.com/${answersObject.githubName}/readme-generator#question-and-contact-info)
 * [License](https://github.com/${answersObject.githubName}/readme-generator#license)
 <hr>
 
@@ -62,7 +62,7 @@ ${answersObject.description}
 ### ${answersObject.notes}
   
 
-## Questions
+## Questions and Contact Info
 If you have any questions, please reach out to me at ${answersObject.email}.
 You can also see my portfolio at https://github.com/${answersObject.githubName}.    
   
