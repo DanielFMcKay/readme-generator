@@ -28,7 +28,7 @@ function generateMarkdown(answersObject) {
 * [Installation](https://github.com/${answersObject.githubName}/readme-generator#installation)
 * [Usage](https://github.com/${answersObject.githubName}/readme-generator#usage)
 * [Live Site](https://github.com/${answersObject.githubName}/readme-generator#live-site)
-* [Contributing](https://github.com/${answersObject.githubName}/readme-generator#contributing)
+* [Contributing Guidelines](https://github.com/${answersObject.githubName}/readme-generator#contributing-Guidelines)
 * [Tests](https://github.com/${answersObject.githubName}/readme-generator#tests)
 * [Notes](https://github.com/${answersObject.githubName}/readme-generator#notes)
 * [Questions and Contact Info](https://github.com/${answersObject.githubName}/readme-generator#question-and-contact-info)
@@ -39,27 +39,27 @@ function generateMarkdown(answersObject) {
 ${answersObject.description}
 
 ## Installation Instructions
-### ${answersObject.installation}
+${answersObject.installation}
 
 ## Usage
-### ${answersObject.usage}
+${answersObject.usage}
 
 ## Tests
-### ${answersObject.testing}
+${answersObject.testing}
 
 ## Live Site: [${answersObject.projectTitle}](${answersObject.liveSite})
 
-## Contributing
-### ${answersObject.contributing}
+## Contributing Guidlines
+${answersObject.contributing}
 
 ## Contributors & Collaborators
 * ${answersObject.contributors}
 
 ## Usage
-### ${answersObject.usage}
+${answersObject.usage}
 
 ## Notes
-### ${answersObject.notes}
+${answersObject.notes}
   
 
 ## Questions and Contact Info
