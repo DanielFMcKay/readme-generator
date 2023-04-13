@@ -42,7 +42,7 @@ This project is a weekly assignment for the Bootcamp Spot coding bootcamp offere
 ### This ReadMe file is just a sample output for demonstration purposes.
   
 
-## Questions
+## Questions and Contact Info
 If you have any questions, please reach out to me at d*******@gmail.com.
 You can also see my portfolio at https://github.com/DanielFMcKay.    
   
