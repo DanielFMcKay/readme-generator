@@ -24,15 +24,15 @@ function generateMarkdown(answersObject) {
 <hr>
 
 ## Table of Contents
-* [Description](https://github.com/${answersObject.githubName}/readme-generator#description)
-* [Installation](https://github.com/${answersObject.githubName}/readme-generator#installation)
-* [Usage](https://github.com/${answersObject.githubName}/readme-generator#usage)
-* [Live Site](https://github.com/${answersObject.githubName}/readme-generator#live-site)
-* [Contributing Guidelines](https://github.com/${answersObject.githubName}/readme-generator#contributing-Guidelines)
-* [Tests](https://github.com/${answersObject.githubName}/readme-generator#tests)
-* [Notes](https://github.com/${answersObject.githubName}/readme-generator#notes)
-* [Questions and Contact Info](https://github.com/${answersObject.githubName}/readme-generator#question-and-contact-info)
-* [License](https://github.com/${answersObject.githubName}/readme-generator#license)
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Live Site](#live-site)
+* [Contributing Guidelines](#contributing-Guidelines)
+* [Tests](#tests)
+* [Notes](#notes)
+* [Questions and Contact Info](#question-and-contact-info)
+* [License](#license)
 <hr>
 
 ## Description
@@ -47,7 +47,8 @@ ${answersObject.usage}
 ## Tests
 ${answersObject.testing}
 
-## Live Site: [${answersObject.projectTitle}](${answersObject.liveSite})
+## Live Site
+### [${answersObject.projectTitle}](${answersObject.liveSite})
 
 ## Contributing Guidlines
 ${answersObject.contributing}
