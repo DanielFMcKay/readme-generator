@@ -26,9 +26,10 @@ function generateMarkdown(answersObject) {
 ## Table of Contents
 * [Description](#description)
 * [Installation](#installation)
-* [Usage](#usage)
 * [Live Site](#live-site)
+* [Contributors & Collaborators](#contributors-&-collaborators)
 * [Contributing Guidelines](#contributing-Guidelines)
+* [Usage](#usage)
 * [Tests](#tests)
 * [Notes](#notes)
 * [Questions and Contact Info](#question-and-contact-info)
@@ -41,23 +42,20 @@ ${answersObject.description}
 ## Installation Instructions
 ${answersObject.installation}
 
+## Live Site
+### [${answersObject.projectTitle}](${answersObject.liveSite})
+
+## Contributors & Collaborators
+* ${answersObject.contributors}
+
+## Contributing Guidlines
+${answersObject.contributing}
+
 ## Usage
 ${answersObject.usage}
 
 ## Tests
 ${answersObject.testing}
-
-## Live Site
-### [${answersObject.projectTitle}](${answersObject.liveSite})
-
-## Contributing Guidlines
-${answersObject.contributing}
-
-## Contributors & Collaborators
-* ${answersObject.contributors}
-
-## Usage
-${answersObject.usage}
 
 ## Notes
 ${answersObject.notes}
@@ -68,8 +66,8 @@ If you have any questions, please reach out to me at ${answersObject.email}.
 You can also see my portfolio at https://github.com/${answersObject.githubName}.    
   
 ## License
-### This project is covered under the ${answersObject.license} License.
-### ${licenseLink}.
+This project is covered under the ${answersObject.license} License.
+${licenseLink}.
 
 ## Copyright (c) 2023 ${answersObject.author}.
   
