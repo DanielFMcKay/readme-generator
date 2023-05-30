@@ -13,7 +13,7 @@ a node JS app to create a quality readme via command line prompts and entries
 
 * A sample output is included in the Sample-Output folder here: https://github.com/DanielFMcKay/readme-generator/tree/master/Sample-Output.
 
-* Demo video: https://drive.google.com/file/d/1ocL2F_tzDmNd-mlUrmRyqMXWHZ13vQCu/view
+* Demo video: https://drive.google.com/file/d/1mXxhF7yKw6jZn1gRe8sPW2_ywIjduMM8/view
 
 * There is a utility folder that has a script file for generating the desired markdown formatting. It will also apply the licensing text and stamp at a future date.
 
