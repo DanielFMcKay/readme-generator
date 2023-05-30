@@ -25,14 +25,14 @@ function generateMarkdown(answersObject) {
 
 ## Table of Contents
 * [Description](#description)
-* [Installation](#installation)
+* [Installation](#installation-instructions)
 * [Live Site](#live-site)
-* [Contributors & Collaborators](#contributors-&-collaborators)
-* [Contributing Guidelines](#contributing-Guidelines)
+* [Contributors & Collaborators](#contributors-and-collaborators)
+* [Contributing Guidelines](#contributing-guidelines)
 * [Usage](#usage)
 * [Tests](#tests)
 * [Notes](#notes)
-* [Questions and Contact Info](#question-and-contact-info)
+* [Questions and Contact Info](#questions-and-contact-info)
 * [License](#license)
 <hr>
 
@@ -48,7 +48,7 @@ ${answersObject.installation}
 ## Contributors & Collaborators
 * ${answersObject.contributors}
 
-## Contributing Guidlines
+## Contributing Guidelines
 ${answersObject.contributing}
 
 ## Usage
@@ -60,7 +60,6 @@ ${answersObject.testing}
 ## Notes
 ${answersObject.notes}
   
-
 ## Questions and Contact Info
 If you have any questions, please reach out to me at ${answersObject.email}.
 You can also see my portfolio at https://github.com/${answersObject.githubName}.    
@@ -69,7 +68,7 @@ You can also see my portfolio at https://github.com/${answersObject.githubName}.
 This project is covered under the ${answersObject.license} License.
 ${licenseLink}.
 
-## Copyright (c) 2023 ${answersObject.author}.
+### Copyright (c) 2023 ${answersObject.author}.
   
 `
 }

@@ -5,14 +5,14 @@
 
 ## Table of Contents
 * [Description](#description)
-* [Installation](#installation)
+* [Installation](#installation-instructions)
 * [Live Site](#live-site)
-* [Contributors & Collaborators](#contributors-&-collaborators)
-* [Contributing Guidelines](#contributing-Guidelines)
+* [Contributors & Collaborators](#contributors-and-collaborators)
+* [Contributing Guidelines](#contributing-guidelines)
 * [Usage](#usage)
 * [Tests](#tests)
 * [Notes](#notes)
-* [Questions and Contact Info](#question-and-contact-info)
+* [Questions and Contact Info](#questions-and-contact-info)
 * [License](#license)
 <hr>
 
@@ -25,10 +25,10 @@ First, copy the files and folders in this repository, put them in a folder. Then
 ## Live Site
 ### [ReadMe Generator](N/A)
 
-## Contributors & Collaborators
+## Contributors and Collaborators
 * N/A
 
-## Contributing Guidlines
+## Contributing Guidelines
 None at the moment, as this is a solo project. However, if interested feel free to email me!
 
 ## Usage
@@ -40,7 +40,6 @@ There are no built-in tests at the moment beyond console logs. However, you can 
 ## Notes
 This ReadMe file is just a sample output for demonstration purposes.
   
-
 ## Questions and Contact Info
 If you have any questions, please reach out to me at d******@gmail.com.
 You can also see my portfolio at https://github.com/DanielFMcKay.    
@@ -49,5 +48,5 @@ You can also see my portfolio at https://github.com/DanielFMcKay.
 This project is covered under the MIT License.
 More information can be found at https://spdx.org/licenses/MIT.html.
 
-## Copyright (c) 2023 Dan McKay.
+### Copyright (c) 2023 Dan McKay.
   
